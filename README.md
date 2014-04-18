@@ -4,7 +4,9 @@
 
 * As a user I want to be able to comment on questions, and edit and delete my own comments.
 
-* As an author I want to be able to write, edit, delete my blog posts.
+* As a user I want to be able to add a photo and information to my profile page.
+
+* As an author I want to be able to write, edit, and delete my blog posts. (COMPLETE)
 
 * As an author I want to be able to delete others comments on my posts.
 
