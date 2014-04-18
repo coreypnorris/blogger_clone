@@ -1,0 +1,15 @@
+<%= render("layouts/errors", :object => @post) %>
+
+<%= form_for @post do |f| %>
+  <div class="form-group">
+    <%= f.label :header %></br>
+    <%= f.text_field :header %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :content %></br>
+    <%= f.text_area :content %>
+  </div>
+
+  <%= f.submit(:class => "btn btn-primary") %>
+<% end %>
