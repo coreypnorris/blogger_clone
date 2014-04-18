@@ -12,3 +12,15 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+  padding-top: 70px;
+}
+
+#submit {
+  padding-left: 15px;
+}
+
+h1 {
+  padding-left:  15px;
+}

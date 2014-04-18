@@ -7,11 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<div class="container">
-  <%= flash[:notice] %>
-  <%= flash[:alert] %>
-  <%= yield %>
-</div>
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+     <div class="container">
+       <%= link_to "Lorem Blog", root_url,
+           :class => "navbar-text navbar-left" %>
+       <%= link_to "New Post", new_post_path,
+           :class => "navbar-text navbar-left" %>
+     </div>
+   </div>
+  <div class="container">
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
+    <%= yield %>
+  </div>
 </body>
 </html>
