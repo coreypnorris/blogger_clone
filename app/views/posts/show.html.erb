@@ -1,5 +1,6 @@
 <h1><%= @post.header %></h1>
 
+<p><h5>by: <%= @post.user.name %></h5></p>
 <p><%= @post.content %></p>
 <%= link_to "Edit", edit_post_path, :class => "btn btn-primary" %>
 <%= link_to "Delete", post_path(@post),
