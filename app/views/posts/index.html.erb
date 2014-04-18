@@ -1,7 +1,7 @@
-<h1>Blogger_clone</h1>
+<h1>Lorem Blog</h1>
 
-<%= link_to "New Post", new_post_path %>
-
-<% @posts.each do |post| %>
-  <li><%= link_to post.header, post_path(post) %></li>
-<% end %>
+<ul>
+  <% @posts.each do |post| %>
+    <li><%= link_to post.header, post_path(post) %></li><br>
+  <% end %>
+</ul>
