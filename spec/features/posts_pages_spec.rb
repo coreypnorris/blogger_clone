@@ -19,11 +19,8 @@ describe Post  do
     it 'allows the author of a post to edit it' do
       user = FactoryGirl.create(:user)
       sign_in(user)
-      visit new_post_path
-      post = FactoryGirl.build(:post)
-      fill_in :post_header, with: post.header
-      fill_in :post_content, with: post.content
-      click_button "Create Post"
+      visit new_user_post_path(user)
+      create_new_post
       click_link post.header
       click_link "Edit"
       fill_in :post_header, with: Faker::Lorem.sentence
